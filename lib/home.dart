@@ -44,9 +44,8 @@ dynamic get_club(bool real) {
         height: 40,
         width: 70,
         child: Text(
-          
           get_club_desc(1, real),
-          textAlign: TextAlign.center ,
+          textAlign: TextAlign.center,
           style: const TextStyle(fontFamily: 'Nunito', color: Colors.white),
         ),
       ),
@@ -64,14 +63,12 @@ dynamic get_club_2(int n, bool real) {
       child: get_club(true),
     ));
   }
-  if(!real)
-  {
-    for (int x = 0; x < 4-n; x++) {
-    mywidgets.add(Container(
-      child: get_club(false),
-    ));
-  }
-    
+  if (!real) {
+    for (int x = 0; x < 4 - n; x++) {
+      mywidgets.add(Container(
+        child: get_club(false),
+      ));
+    }
   }
 
   return Padding(
@@ -92,7 +89,6 @@ dynamic get_club_3(int n) {
       mywidgets.add(Container(
         child: get_club_2(n, false),
       ));
-      
     }
     n = n - 4;
   }
@@ -179,7 +175,7 @@ class home extends StatelessWidget {
             Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Column(
-                  children: [get_club_3(22)],
+                  children: [get_club_3(21)],
                 ))
           ]),
         ),

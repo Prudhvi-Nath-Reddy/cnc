@@ -1,4 +1,5 @@
 import 'package:cnc/home.dart';
+import 'package:cnc/profile.dart';
 import 'package:cnc/sign_up.dart';
 import 'package:flutter/material.dart';
 import 'sign_in.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: home() 
+      home: profile() 
     );
   }
 }
